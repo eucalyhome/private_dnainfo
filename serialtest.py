@@ -16,7 +16,7 @@ def getdata(querydata):
                     if serialreaddata == '\n':
                         serialline = serialline.strip()
                         return (serialline)
-        expect:
+        except:
             time.sleep(0.1)
             return("notfound")
 
